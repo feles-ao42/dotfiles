@@ -1,4 +1,4 @@
-boke0's dotfiles
+feles's dotfiles
 ===
 
 ## Usage
