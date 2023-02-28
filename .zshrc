@@ -15,8 +15,6 @@ colors
 autoload -Uz compinit
 compinit
 
-# emacsキーバインド
-bindkey -e
 
 # 他のターミナルとヒストリーを共有
 setopt share_history
@@ -134,6 +132,12 @@ function mkcd() {
   fi
 }
 
+
+export EDITOR=vim
+eval "$(direnv hook zsh)"
+
+plugins={zsh-autosuggestions}
+
 # git設定
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
 autoload -Uz vcs_info
@@ -146,4 +150,6 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
