@@ -9,7 +9,7 @@ export_function() {
   PATH_add "$alias_dir"
   local target="$alias_dir/$name"
   if declare -f "$name" >/dev/null; then
-    echo "#!/usr/bin/env bash" > "$target"
+    echo "#!/usr/bin/env zsh" > "$target"
     declare -f "$name" >> "$target" 2>/dev/null
     echo "$name" >> "$target"
     chmod +x "$target"
@@ -34,7 +34,7 @@ export_complete_function() {
   PATH_add "$completion_dir"
   local target="$completion_dir/$name"
   if declare -f "$name" >/dev/null; then
-    echo "#!/usr/bin/env bash" > "$target"
+    echo "#!/usr/bin/env zsh" > "$target"
     declare -f "$name" >> "$target" 2>/dev/null
     echo "$name" >> "$target"
     chmod +x "$target"
