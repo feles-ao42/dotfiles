@@ -1,73 +1,19 @@
 {
-  "Ansi 4 Color" : {
+  "Working Directory" : "\/Users\/feles",
+  "Prompt Before Closing 2" : false,
+  "Selected Text Color" : {
     "Green Component" : 0,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0
-  },
-  "Tags" : [
-
-  ],
-  "Ansi 12 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Blue Component" : 1,
-    "Red Component" : 0.3333333432674408
-  },
-  "Ansi 7 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527
-  },
-  "Ansi 8 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408
-  },
-  "Bold Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 1,
-    "Red Component" : 1
-  },
-  "Ansi 9 Color" : {
-    "Green Component" : 0.3333333432674408,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 1
-  },
-  "Right Option Key Sends" : 0,
-  "Ansi 6 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
+    "Blue Component" : 0,
     "Red Component" : 0
   },
   "Rows" : 25,
-  "Default Bookmark" : "No",
-  "Cursor Guide Color" : {
-    "Red Component" : 0.70214027166366577,
-    "Color Space" : "sRGB",
-    "Blue Component" : 1,
-    "Alpha Component" : 0.25,
-    "Green Component" : 0.92681378126144409
-  },
-  "Non-ASCII Anti Aliased" : true,
-  "Use Bright Bold" : true,
-  "Ansi 10 Color" : {
+  "Ansi 11 Color" : {
     "Green Component" : 1,
     "Blue Component" : 0.3333333432674408,
-    "Red Component" : 0.3333333432674408
-  },
-  "Use Cursor Guide" : false,
-  "Icon" : 0,
-  "Ambiguous Double Width" : false,
-  "Jobs to Ignore" : [
-    "rlogin",
-    "ssh",
-    "slogin",
-    "telnet"
-  ],
-  "Ansi 15 Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 1,
     "Red Component" : 1
   },
+  "Use Italic Font" : true,
+  "HotKey Characters" : "",
   "Foreground Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -75,17 +21,9 @@
     "Alpha Component" : 1,
     "Green Component" : 0.89847008138895035
   },
-  "Working Directory" : "\/Users\/feles",
-  "Use Tab Color" : false,
-  "Blinking Cursor" : false,
-  "Disable Window Resizing" : true,
-  "Sync Title" : false,
-  "Prompt Before Closing 2" : false,
-  "BM Growl" : true,
-  "Command" : "",
-  "Description" : "Default",
-  "Mouse Reporting" : true,
-  "Screen" : -1,
+  "HotKey Window Floats" : true,
+  "Right Option Key Sends" : 0,
+  "Character Encoding" : 4,
   "Selection Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -93,40 +31,60 @@
     "Alpha Component" : 1,
     "Green Component" : 0
   },
-  "Only The Default BG Color Uses Transparency" : true,
-  "Columns" : 80,
-  "Idle Code" : 0,
-  "Background Image Mode" : 2,
-  "Ansi 13 Color" : {
-    "Green Component" : 0.3333333432674408,
+  "Mouse Reporting" : true,
+  "Ansi 4 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0
+  },
+  "Non-ASCII Anti Aliased" : true,
+  "Sync Title" : false,
+  "Disable Window Resizing" : true,
+  "Description" : "Default",
+  "Close Sessions On End" : true,
+  "Jobs to Ignore" : [
+    "rlogin",
+    "ssh",
+    "slogin",
+    "telnet"
+  ],
+  "Scrollback Lines" : 1000,
+  "HotKey Window Reopens On Activation" : false,
+  "Brighten Bold Text" : true,
+  "Flashing Bell" : false,
+  "Cursor Guide Color" : {
+    "Red Component" : 0.70214027166366577,
+    "Color Space" : "sRGB",
+    "Blue Component" : 1,
+    "Alpha Component" : 0.25,
+    "Green Component" : 0.92681378126144409
+  },
+  "BM Growl" : true,
+  "Ansi 3 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0,
+    "Red Component" : 0.73333334922790527
+  },
+  "Icon" : 0,
+  "Use Non-ASCII Font" : false,
+  "Link Color" : {
+    "Red Component" : 0.924346923828125,
+    "Color Space" : "sRGB",
+    "Blue Component" : 1,
+    "Alpha Component" : 1,
+    "Green Component" : 0
+  },
+  "Shortcut" : "",
+  "Background Image Location" : "\/Users\/feles\/Desktop\/terminalbg.jpg",
+  "Bold Color" : {
+    "Green Component" : 1,
     "Blue Component" : 1,
     "Red Component" : 1
   },
-  "Brighten Bold Text" : true,
-  "Custom Command" : "No",
-  "ASCII Anti Aliased" : true,
-  "Non Ascii Font" : "Monaco 12",
-  "Vertical Spacing" : 1,
-  "Use Bold Font" : true,
-  "Option Key Sends" : 0,
-  "Selected Text Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0,
-    "Red Component" : 0
-  },
-  "Background Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0,
-    "Red Component" : 0
-  },
-  "Character Encoding" : 4,
-  "Ansi 11 Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 0.3333333432674408,
-    "Red Component" : 1
-  },
-  "Use Italic Font" : true,
+  "Use Cursor Guide" : false,
   "Unlimited Scrollback" : false,
+  "Custom Command" : "No",
+  "HotKey Key Code" : 0,
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Action" : 10,
@@ -289,11 +247,68 @@
       "Text" : "[1;2P"
     }
   },
+  "Ansi 14 Color" : {
+    "Green Component" : 1,
+    "Blue Component" : 1,
+    "Red Component" : 0.3333333432674408
+  },
+  "Ansi 2 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0,
+    "Red Component" : 0
+  },
+  "Send Code When Idle" : false,
+  "ASCII Anti Aliased" : true,
+  "Tags" : [
+
+  ],
+  "Ansi 9 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 1
+  },
+  "Use Bold Font" : true,
+  "Silence Bell" : false,
+  "Ansi 12 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Blue Component" : 1,
+    "Red Component" : 0.3333333432674408
+  },
   "Window Type" : 0,
-  "Blur Radius" : 20.189619348404257,
-  "Cursor Type" : 2,
-  "Background Image Location" : "\/Users\/feles\/Desktop\/terminalbg.jpg",
-  "Blur" : true,
+  "Use Bright Bold" : true,
+  "Has Hotkey" : true,
+  "HotKey Modifier Activation" : 3,
+  "Cursor Text Color" : {
+    "Green Component" : 1,
+    "Blue Component" : 1,
+    "Red Component" : 1
+  },
+  "HotKey Window Dock Click Action" : 0,
+  "Default Bookmark" : "No",
+  "Cursor Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527
+  },
+  "Ansi 1 Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0,
+    "Red Component" : 0.73333334922790527
+  },
+  "Name" : "feles",
+  "Blinking Cursor" : false,
+  "Guid" : "280FFA6C-ED7D-4A09-93AB-CD12B573039B",
+  "Idle Code" : 0,
+  "Ansi 10 Color" : {
+    "Green Component" : 1,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408
+  },
+  "Ansi 8 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Blue Component" : 0.3333333432674408,
+    "Red Component" : 0.3333333432674408
+  },
   "Badge Color" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -301,66 +316,66 @@
     "Alpha Component" : 0.5,
     "Green Component" : 0.14910027384757996
   },
-  "Scrollback Lines" : 1000,
-  "Send Code When Idle" : false,
-  "Close Sessions On End" : true,
-  "Terminal Type" : "xterm-256color",
-  "Visual Bell" : true,
-  "Flashing Bell" : false,
-  "Silence Bell" : false,
-  "Ansi 14 Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 1,
-    "Red Component" : 0.3333333432674408
-  },
-  "Name" : "feles",
-  "Cursor Text Color" : {
-    "Green Component" : 1,
-    "Blue Component" : 1,
-    "Red Component" : 1
-  },
-  "Shortcut" : "",
-  "Cursor Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527
-  },
-  "Transparency" : 0.40464594414893618,
+  "Ambiguous Double Width" : false,
+  "Blur Radius" : 20.189619348404257,
+  "Background Image Mode" : 2,
+  "Cursor Type" : 2,
   "Ansi 0 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0,
     "Red Component" : 0
   },
-  "Guid" : "280FFA6C-ED7D-4A09-93AB-CD12B573039B",
-  "Ansi 3 Color" : {
+  "Blur" : true,
+  "Normal Font" : "Monaco 20",
+  "Vertical Spacing" : 1,
+  "Ansi 7 Color" : {
     "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0,
+    "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
   },
-  "Link Color" : {
-    "Red Component" : 0.924346923828125,
-    "Color Space" : "sRGB",
+  "HotKey Window AutoHides" : true,
+  "Command" : "",
+  "Terminal Type" : "xterm-256color",
+  "Horizontal Spacing" : 1,
+  "Option Key Sends" : 0,
+  "Only The Default BG Color Uses Transparency" : true,
+  "HotKey Window Animates" : true,
+  "HotKey Modifier Flags" : 0,
+  "Ansi 15 Color" : {
+    "Green Component" : 1,
     "Blue Component" : 1,
-    "Alpha Component" : 1,
-    "Green Component" : 0
+    "Red Component" : 1
   },
+  "Ansi 6 Color" : {
+    "Green Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527,
+    "Red Component" : 0
+  },
+  "Transparency" : 0.40464594414893618,
+  "HotKey Activated By Modifier" : true,
+  "Background Color" : {
+    "Green Component" : 0,
+    "Blue Component" : 0,
+    "Red Component" : 0
+  },
+  "Screen" : -1,
+  "HotKey Characters Ignoring Modifiers" : "",
+  "Non Ascii Font" : "Monaco 12",
+  "Ansi 13 Color" : {
+    "Green Component" : 0.3333333432674408,
+    "Blue Component" : 1,
+    "Red Component" : 1
+  },
+  "Use Tab Color" : false,
+  "Columns" : 80,
+  "HotKey Alternate Shortcuts" : [
+
+  ],
+  "Visual Bell" : true,
+  "Custom Directory" : "No",
   "Ansi 5 Color" : {
     "Green Component" : 0,
     "Blue Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527
-  },
-  "Use Non-ASCII Font" : false,
-  "Ansi 2 Color" : {
-    "Green Component" : 0.73333334922790527,
-    "Blue Component" : 0,
-    "Red Component" : 0
-  },
-  "Normal Font" : "Monaco 20",
-  "Ansi 1 Color" : {
-    "Green Component" : 0,
-    "Blue Component" : 0,
-    "Red Component" : 0.73333334922790527
-  },
-  "Custom Directory" : "No",
-  "Horizontal Spacing" : 1
+  }
 }
