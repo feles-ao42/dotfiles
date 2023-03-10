@@ -121,3 +121,5 @@ alias .......="cd ../../../../../../.. && pushd ."
 alias ,,="popd"
 
 source /Users/feles/.docker/init-bash.sh || true # Added by Docker Desktop
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
