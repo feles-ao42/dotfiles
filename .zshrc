@@ -150,10 +150,6 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 PERCOL=fzf
@@ -176,3 +172,10 @@ PERCOL=fzf
 #    :  # Start terminal normally
 #  fi
 #fi
+
+    # mac only
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
+
+    #Linux only
+#. "$HOME/.asdf/asdf.sh"
