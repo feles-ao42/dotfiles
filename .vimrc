@@ -173,7 +173,6 @@ nnoremap <Leader>D :LspReferences<CR>
 
 syntax enable
 set background=dark
-colorscheme molokai
 
 " If you want to install not installed plugins on startup.
 if dein#check_install()
