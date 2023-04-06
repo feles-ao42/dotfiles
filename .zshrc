@@ -182,5 +182,8 @@ PERCOL=fzf
 
 gpg-connect-agent --quiet /bye
 
+ssh-add -K
 
+
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
