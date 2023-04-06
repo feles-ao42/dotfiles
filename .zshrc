@@ -179,3 +179,8 @@ PERCOL=fzf
 
     #Linux only
 #. "$HOME/.asdf/asdf.sh"
+
+gpg-connect-agent --quiet /bye
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
