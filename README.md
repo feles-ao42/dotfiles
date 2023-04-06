@@ -7,4 +7,3 @@ feles's dotfiles!
 make init
 make deploy
 ```
-
