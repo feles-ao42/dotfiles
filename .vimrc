@@ -51,37 +51,6 @@ augroup MyAutoCmd
   autocmd!
 augroup END
 
-" dein settings {{{
-" dein自体の自動インストール
-let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.vim') : $XDG_CACHE_HOME
-let s:dein_dir = s:cache_home . '/dein'
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
-if !isdirectory(s:dein_repo_dir)
-  call system('git clone https://github.com/Shougo/dein.vim ' . shellescape(s:dein_repo_dir))
-endif
-let &runtimepath = s:dein_repo_dir .",". &runtimepath
-" プラグイン読み込み＆キャッシュ作成
-let s:toml_file = fnamemodify(expand('<sfile>'), ':h').'/.dein.toml'
-if dein#load_state(s:dein_dir)
-  call dein#begin(s:dein_dir, [$MYVIMRC, s:toml_file])
-  call dein#load_toml(s:toml_file)
-  call dein#end()
-  call dein#save_state()
-endif
-" 不足プラグインの自動インストール
-if has('vim_starting') && dein#check_install()
-  call dein#install()
-endif
-" }}}
-
-" 引数なしでvimを開くとNERDTreeを起動
-let file_name = expand('%')
-if has('vim_starting') &&  file_name == ''
-  autocmd VimEnter * NERDTree ./
-endif
-
-"End dein Scripts-------------------------
-
 if !isdirectory(g:session_path)
     call mkdir(g:session_path, 'p')
 endif
@@ -90,46 +59,6 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Required:
-set runtimepath+=$HOME/.cache/dein/repos/github.com/Shougo/dein.vim
-
-" Required:
-if dein#load_state($HOME . '/.cache/dein')
-    call dein#begin($HOME . '/.cache/dein')
-
-    " Let dein manage dein
-    " Required:
-    call dein#add('cocopon/iceberg.vim')
-    call dein#add('Shougo/dein.vim')
-    call dein#add('Shougo/unite.vim')
-    call dein#add('Shougo/vimfiler.vim')
-    call dein#add('sheerun/vim-polyglot')
-    call dein#add('ryanoasis/vim-devicons')
-    call dein#add('vim-airline/vim-airline')
-    call dein#add('jiangmiao/auto-pairs')
-    call dein#add('terryma/vim-multiple-cursors')
-    call dein#add('prabirshrestha/asyncomplete.vim')
-    call dein#add('prabirshrestha/vim-lsp')
-    call dein#add('prabirshrestha/asyncomplete-lsp.vim')
-    call dein#add('mattn/vim-lsp-settings')
-    call dein#add('mattn/vim-lsp-icons')
-
-    call dein#add('puremourning/vimspector', {'lazy':1})
-
-    " Required:
-    call dein#end()
-    call dein#save_state()
-
-    if executable('sxiv') && executable('gimp') && executable('inkscape')
-        augroup vimfiler_mapping
-            autocmd!
-            autocmd FileType vimfiler nmap <buffer> x <Plug>(vimfiler_execute_vimfiler_associated)
-        augroup END
-        call vimfiler#set_execute_file('svg', ['sxiv', 'inkscape', 'vim'])
-        call vimfiler#set_execute_file('png,jpeg,jpg,heic,gif,tiff', ['sxiv', 'gimp', 'inkscape'])
-        call vimfiler#set_execute_file('pdf', ['zathura'])
-    endif
-endif
 
 " Required:
 filetype plugin indent on
@@ -170,11 +99,6 @@ set omnifunc=lsp#complete
 
 nnoremap <Leader>d :LspDefinition<CR>
 nnoremap <Leader>D :LspReferences<CR>
-
-" If you want to install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
 
 syntax enable
 set background=dark
