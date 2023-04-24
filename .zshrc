@@ -182,7 +182,7 @@ PERCOL=fzf
 
 gpg-connect-agent --quiet /bye
 
-ssh-add -K
+# ssh-add -K
 
 
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
