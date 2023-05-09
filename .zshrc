@@ -72,6 +72,7 @@ alias dockerstop='docker stop $(docker ps -q)'
 alias dockerkill='docker rm $(docker ps -aq)'
 alias nq="networkQuality"
 alias asci="ASCIIQuarium"
+alias relogin='exec $SHELL -l'
 
 # cdの後にlsを実行
 chpwd() { ls -ltr }
@@ -178,7 +179,7 @@ PERCOL=fzf
 # source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
 
     #Linux only
-#. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/asdf.sh"
 
 gpg-connect-agent --quiet /bye
 
@@ -188,4 +189,4 @@ gpg-connect-agent --quiet /bye
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
+#. /opt/homebrew/opt/asdf/libexec/asdf.sh
