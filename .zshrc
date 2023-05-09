@@ -73,7 +73,7 @@ alias dockerkill='docker rm $(docker ps -aq)'
 alias nq="networkQuality"
 alias asci="ASCIIQuarium"
 alias relogin='exec $SHELL -l'
-
+alias vc='sudo vim /etc/nixos/configuration.nix'
 # cdの後にlsを実行
 chpwd() { ls -ltr }
 
