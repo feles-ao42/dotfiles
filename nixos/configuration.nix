@@ -43,9 +43,9 @@
     LC_TIME = "ja_JP.UTF-8";
   };
 
-  i18n.inputMethod = {
-    enabled = "fcitx";
-    fcitx.engines = with pkgs.fcitx-engines; [ mozc anthy ];
+  i18n = {
+    inputMethod.enabled = "fcitx";
+    inputMethod.fcitx.engines = with pkgs.fcitx-engines; [ mozc anthy ];
     defaultLocale = "en_US.UTF-8";
   };
 
