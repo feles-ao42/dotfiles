@@ -8,7 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       <nixos-hardware/lenovo/thinkpad/x390>
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       ./shell.nix
     ];
 
