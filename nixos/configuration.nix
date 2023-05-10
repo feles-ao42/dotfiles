@@ -127,7 +127,6 @@
     gnome.nautilus
     mpd
     htop
-    arandr
 
     # fcitx something
     fcitx-engines.mozc
