@@ -43,39 +43,22 @@
     LC_TIME = "ja_JP.UTF-8";
   };
 
-  i18n = {
-    inputMethod.enabled = "fcitx";
-    inputMethod.fcitx.engines = with pkgs.fcitx-engines; [ mozc anthy ];
+  i18n.inputMethod = {
+    enabled = "fcitx";
+    fcitx.engines = with pkgs.fcitx-engines; [ mozc anthy ];
+    defaultLocale = "en_US.UTF-8";
   };
-  
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
+   services.xserver = {
+      enable = true;
+      layout = "us";
 
-  # Enable the GNOME Desktop Environment.
-  #services.xserver.displayManager.gdm.enable = true;
-  #services.xserver.desktopManager.gnome.enable = true;
+      displayManager.gdm.enable = true;
+      desktopManager.gnome.enable = true;
 
-  services.xserver = {
-    enable = true;
-    layout = "us";
-    xkbOptions = "eurosign:e";
-
-    # Enable the i3 Desktop Environment.
-    windowManager = {
-      i3 = {
-        enable = true;
-        package = pkgs.i3-gaps;
-
-        extraPackages = with pkgs; [
-          dmenu
-          i3status
-          i3lock
-          i3blocks
-       ];
-      };
+      # Enable touchpad support.
+      libinput.enable = true;
     };
-  };
 
 
   # Configure console keymap
@@ -101,8 +84,6 @@
     #media-session.enable = true;
   };
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  services.xserver.libinput.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.feles = {
@@ -138,25 +119,21 @@
     brave 
     zoom-us slack discord
     docker-compose
+
+    # custom
     fzf
     direnv
     gnupg
-    i3lock
-    i3-gaps
-    rxvt-unicode
-    polybar
-    rofi
-    dunst
     gnome.nautilus
     mpd
     htop
     arandr
+
+    # fcitx something
     fcitx-engines.mozc
     fcitx
     fcitx-configtool    
     fcitx-engines.anthy
-    xorg.xbacklight
-# Configure keymap in X11
   ];
 
   environment.gnome.excludePackages = [ 
