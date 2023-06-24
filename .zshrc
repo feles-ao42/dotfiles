@@ -74,6 +74,8 @@ alias nq="networkQuality"
 alias asci="ASCIIQuarium"
 alias relogin='exec $SHELL -l'
 alias vc='sudo vim /etc/nixos/configuration.nix'
+alias えぃt='exit'
+
 # cdの後にlsを実行
 chpwd() { ls -ltr }
 
@@ -175,11 +177,11 @@ PERCOL=fzf
 #fi
 
     # mac only
-# . /opt/homebrew/opt/asdf/libexec/asdf.sh
-# source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
 
     #Linux only
-. "$HOME/.asdf/asdf.sh"
+# . "$HOME/.asdf/asdf.sh"
 
 gpg-connect-agent --quiet /bye
 
@@ -190,3 +192,4 @@ export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 #. /opt/homebrew/opt/asdf/libexec/asdf.sh
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
