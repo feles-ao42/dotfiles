@@ -1,7 +1,7 @@
 [user]
 	email = yf@keio.jp
 	name = feles-ao42
-	signingkey = B2600F6904140481
+	signingkey = 60D6113E7D534E6C
 [pull]
 	rebase = false
 [init]
@@ -35,7 +35,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
-[commit]
-	gpgsign = true
-[gpg]
-	program = /opt/homebrew/bin/gpg
+#[commit]
+#	gpgsign = true
+#[gpg]
+#	program = ~/.nix-profile/share/gnupg

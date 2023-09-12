@@ -15,7 +15,6 @@ colors
 autoload -Uz compinit
 compinit
 
-
 # 他のターミナルとヒストリーを共有
 setopt share_history
 
@@ -55,6 +54,7 @@ alias so='source'
 alias v='vim'
 alias vi='vim'
 alias vz='vim ~/.zshrc'
+alias vn='vim ~/Github/dotfiles_nix/home-manager/home.nix'
 alias c='cdr'
 alias pc="pbpaste|pbcopy"
 alias pcc="pbpaste|tr -d '\n' | wc -m"
@@ -176,20 +176,22 @@ PERCOL=fzf
 #  fi
 #fi
 
-    # mac only
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
 
-    #Linux only
+# brew configs
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# export PATH=$PATH:/opt/homebrew/Cellar/john-jumbo/1.9.0_1/
+# export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+
+# Mac configs
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+gpg-connect-agent --quiet /bye
+source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
+eval "$(direnv hook zsh)"
+export GPG_TTY=$(tty)
+
+# Linux configs
 # . "$HOME/.asdf/asdf.sh"
 
-gpg-connect-agent --quiet /bye
-
-# ssh-add -K
-
-
-export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-#. /opt/homebrew/opt/asdf/libexec/asdf.sh
-export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+# nix configs
+. "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+. "$HOME/.nix-profile/share/asdf-vm/asdf.sh"
