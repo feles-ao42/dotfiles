@@ -185,7 +185,7 @@ PERCOL=fzf
 # Mac configs
 export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
 gpg-connect-agent --quiet /bye
-source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
+#source /Users/feles/.docker/init-zsh.sh || true # Added by Docker Desktop
 eval "$(direnv hook zsh)"
 export GPG_TTY=$(tty)
 
